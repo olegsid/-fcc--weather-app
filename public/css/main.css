@@ -1,2 +1,37 @@
-.body {
-  background-color: wheat; }
+body {
+  background-color: wheat;
+  font-family: 'Pridi', serif; }
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-content: center; }
+
+.content {
+  margin: 10% auto auto; }
+  .content h1 {
+    font-size: 25px;
+    font-weight: normal;
+    margin: 10px 0;
+    padding-left: 10px; }
+
+.location {
+  margin-bottom: 5px;
+  padding-left: 10px; }
+  .location .country-code {
+    font-size: 20px;
+    margin-right: 10px; }
+  .location .city-name {
+    font-size: 25px;
+    font-weight: bold; }
+
+.weather .temperature {
+  font-size: 56px;
+  letter-spacing: -5px;
+  margin-right: 10px; }
+
+.weather .weather-description {
+  font-size: 36px; }

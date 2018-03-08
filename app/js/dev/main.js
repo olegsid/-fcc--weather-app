@@ -24,8 +24,8 @@ getPosition
 	.then((response) => response.json())
 	.then((obj) => {
 		weatherApp.setProperty('cityName', obj.name);
-		weatherApp.setProperty('temperature', obj.sys.country);
-		weatherApp.setProperty('countryCode', obj.main.temp, (temp) => `${Math.floor(temp - 273.15)} °C`);
+		weatherApp.setProperty('countryCode', obj.sys.country);
+		weatherApp.setProperty('temperature', obj.main.temp, (temp) => `${Math.floor(temp - 273.15)} °C`);
 		weatherApp.setProperty('weatherDescription', obj.weather[0].description, text => text[0].toUpperCase() + text.slice(1)
 		);
 	});
