@@ -39,7 +39,7 @@ gulp.task('browserify', function() {
 });
 
 gulp.task('watch', [ 'browser-sync', 'sass', 'browserify' ], function() {
-	gulp.watch('app/sass/**/*.scss', [ 'sass' ]); // Наблюдение за sass файлами
+	gulp.watch('app/scss/**/*.scss', [ 'sass' ]); // Наблюдение за sass файлами
 	gulp.watch('public/**/.*', browserSync.reload);
 	gulp.watch('./**/*.html', browserSync.reload);
 	gulp.watch('app/js/dev/**/*.js', [ 'browserify', browserSync.reload ]);
