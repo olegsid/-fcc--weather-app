@@ -13,9 +13,25 @@ body {
 	align-content: center;
 }
 .container {
-	margin: 10% auto auto;
+	position: relative;
+	margin: 10% 30% auto;
 	display: flex;
 	align-content: center;
+	min-width: 250px;
+	.content-item{
+		position: absolute;
+		display: flex;
+		flex-direction: row;
+		transform: translateX(70%) translateY(-20%);
+	}
+	.temperature {
+		font-size: 150px;
+		min-width: 400px;
+		b{
+			font-size: 50px;
+		}
+
+	}
 }
 .content {
 	h1 {
@@ -37,14 +53,7 @@ body {
 	}
 }
 
-.temperature {
-		font-size: 100px;
-		margin-right: 10px;
-		b{
-			font-size: 50px;
-		}
-		margin-right: 35px;
-	}
+
 .weather {
 
 	.weather-description {
