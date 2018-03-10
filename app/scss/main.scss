@@ -1,3 +1,5 @@
+@import 'switcher';
+
 body {
 	background-color: wheat;
 	font-family: 'Pridi', serif;
@@ -10,19 +12,21 @@ body {
 	height: 100%;
 	align-content: center;
 }
-.content {
+.container {
 	margin: 10% auto auto;
+	display: flex;
+	align-content: center;
+}
+.content {
 	h1 {
 		font-size: 25px;
 		font-weight: normal;
 		margin: 10px 0;
-		padding-left: 10px;
 	}
 }
 
 .location {
 	margin-bottom: 5px;
-	padding-left: 10px;
 	.country-code {
 		font-size: 20px;
 		margin-right: 10px;
@@ -33,12 +37,16 @@ body {
 	}
 }
 
-.weather {
-	.temperature {
-		font-size: 56px;
-		letter-spacing: -5px;
+.temperature {
+		font-size: 100px;
 		margin-right: 10px;
+		b{
+			font-size: 50px;
+		}
+		margin-right: 35px;
 	}
+.weather {
+
 	.weather-description {
 		font-size: 36px;
 	}

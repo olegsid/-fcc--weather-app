@@ -1,3 +1,45 @@
+.tempreature-switch {
+  /* Rounded sliders */ }
+  .tempreature-switch input[type="checkbox"] {
+    opacity: none; }
+  .tempreature-switch .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px; }
+  .tempreature-switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s; }
+  .tempreature-switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s; }
+  .tempreature-switch input:checked + .slider {
+    background-color: #2196f3; }
+  .tempreature-switch input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3; }
+  .tempreature-switch input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px); }
+  .tempreature-switch .slider.round {
+    border-radius: 34px; }
+  .tempreature-switch .slider.round:before {
+    border-radius: 50%; }
+
 body {
   background-color: wheat;
   font-family: 'Pridi', serif; }
@@ -10,17 +52,18 @@ body {
   height: 100%;
   align-content: center; }
 
-.content {
-  margin: 10% auto auto; }
-  .content h1 {
-    font-size: 25px;
-    font-weight: normal;
-    margin: 10px 0;
-    padding-left: 10px; }
+.container {
+  margin: 10% auto auto;
+  display: flex;
+  align-content: center; }
+
+.content h1 {
+  font-size: 25px;
+  font-weight: normal;
+  margin: 10px 0; }
 
 .location {
-  margin-bottom: 5px;
-  padding-left: 10px; }
+  margin-bottom: 5px; }
   .location .country-code {
     font-size: 20px;
     margin-right: 10px; }
@@ -28,10 +71,12 @@ body {
     font-size: 25px;
     font-weight: bold; }
 
-.weather .temperature {
-  font-size: 56px;
-  letter-spacing: -5px;
-  margin-right: 10px; }
+.temperature {
+  font-size: 100px;
+  margin-right: 10px;
+  margin-right: 35px; }
+  .temperature b {
+    font-size: 50px; }
 
 .weather .weather-description {
   font-size: 36px; }
